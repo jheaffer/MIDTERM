@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Arduino Quizzer</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <h1>Basic Arduino Fundamentals Quiz</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Basic Concepts (Text Input)</legend>
+
+            <p>
+                <label for="q1_text">Q1: What is the name of the integrated development environment (IDE) used for writing Arduino code?</label><br>
+                <input type="text" id="q1_text" name="q1_arduino_ide" required size="50">
+            </p>
+
+            <p>
+                <label for="q2_text">Q2: What company created the Arduino project?</label><br>
+                <input type="text" id="q2_text" name="q2_arduino_creator" required size="50">
+            </p>
+
+            <p>
+                <label for="q3_text">Q3: What specific microcontroller chip is commonly used on the Arduino Uno board?</label><br>
+                <input type="text" id="q3_text" name="q3_uno_chip" required size="50">
+            </p>
+
+            <p>
+                <label for="q4_text">Q4: What is the core programming language/environment that Arduino sketches are based on?</label><br>
+                <input type="text" id="q4_text" name="q4_arduino_lang" required size="50">
+            </p>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+            <legend>Syntax and Structure (Single Choice)</legend>
+
+            <p>
+                <strong>Q5: What is the standard data type for storing whole numbers in Arduino?</strong><br>
+                <input type="radio" id="q5_float" name="q5_data_type" value="float" required>
+                <label for="q5_float">float</label><br>
+
+                <input type="radio" id="q5_int" name="q5_data_type" value="int">
+                <label for="q5_int">int</label><br>
+
+                <input type="radio" id="q5_string" name="q5_data_type" value="String">
+                <label for="q5_string">String</label>
+            </p>
+
+            <p>
+                <strong>Q6: Which function runs only once at the beginning of an Arduino sketch?</strong><br>
+                <input type="radio" id="q6_main" name="q6_single_run_func" value="main()" required>
+                <label for="q6_main">main()</label><br>
+
+                <input type="radio" id="q6_setup" name="q6_single_run_func" value="setup()">
+                <label for="q6_setup">setup()</label><br>
+
+                <input type="radio" id="q6_loop" name="q6_single_run_func" value="loop()">
+                <label for="q6_loop">loop()</label>
+            </p>
+
+            <p>
+                <strong>Q7: The `delay(1000)` command will pause the program for how long?</strong><br>
+                <input type="radio" id="q7_delay_sec" name="q7_delay_time" value="1 second" required>
+                <label for="q7_delay_sec">1 second</label><br>
+
+                <input type="radio" id="q7_delay_ms" name="q7_delay_time" value="1000 seconds">
+                <label for="q7_delay_ms">1000 seconds</label><br>
+
+                <input type="radio" id="q7_delay_tenth" name="q7_delay_time" value="0.1 seconds">
+                <label for="q7_delay_tenth">0.1 seconds</label>
+            </p>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+            <legend>Digital and Analog I/O (Multiple Choice)</legend>
+
+            <p>
+                <strong>Q8: Which of these are valid modes for a digital pin using `pinMode()`? (Select all that apply)</strong><br>
+                <input type="checkbox" id="q8_input" name="q8_pin_modes" value="INPUT">
+                <label for="q8_input">INPUT</label><br>
+
+                <input type="checkbox" id="q8_output" name="q8_pin_modes" value="OUTPUT">
+                <label for="q8_output">OUTPUT</label><br>
+
+                <input type="checkbox" id="q8_analog" name="q8_pin_modes" value="ANALOG">
+                <label for="q8_analog">ANALOG</label>
+            </p>
+
+            <p>
+                <strong>Q9: What types of values can be passed to the `digitalWrite()` function? (Select all that apply)</strong><br>
+                <input type="checkbox" id="q9_high" name="q9_digital_vals" value="HIGH">
+                <label for="q9_high">HIGH</label><br>
+
+                <input type="checkbox" id="q9_low" name="q9_digital_vals" value="LOW">
+                <label for="q9_low">LOW</label><br>
+
+                <input type="checkbox" id="q9_mid" name="q9_digital_vals" value="MID">
+                <label for="q9_mid">MID</label>
+            </p>
+
+            <p>
+                <strong>Q10: Which Arduino pins can read analog input signals? (Select all that apply)</strong><br>
+                <input type="checkbox" id="q10_a0" name="q10_analog_pins" value="A0">
+                <label for="q10_a0">A0</label><br>
+
+                <input type="checkbox" id="q10_d13" name="q10_analog_pins" value="D13">
+                <label for="q10_d13">Digital Pin 13</label><br>
+
+                <input type="checkbox" id="q10_a5" name="q10_analog_pins" value="A5">
+                <label for="q10_a5">A5</label>
+            </p>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
