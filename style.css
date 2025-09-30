@@ -90,4 +90,23 @@ input[type="checkbox"] {
     display: inline;
     margin-bottom: 0;
     font-weight: normal;
+
+}
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #ff9800; /* Orange/Amber for action button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #f57c00; /* Darker orange on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
